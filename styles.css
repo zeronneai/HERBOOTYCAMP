@@ -1,10 +1,30 @@
-body {
-  font-family: 'Inter', sans-serif;
+:root{
+  --bg-main: #0B0B10;          /* fondo cinematic */
+  --bg-panel: #111118;         /* secciones */
+  --text-white: #F8FAFC;       /* blanco limpio */
+  --sage: #84A98C;             /* sage green */
+  --sage-soft: #CAD2C5;        /* sage light */
+  --pink: #EC4899;             /* rosa CTA */
+  --pink-soft: #F472B6;        /* rosa hover */
+  --pink-dark: #BE185D;        /* rosa deep */
+}
+body{
+  font-family: "Inter", sans-serif;
+  background: var(--bg-main);
+  color: var(--text-white);
+  overflow-x: hidden;
+}
+.font-headline{
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 0.06em;
 }
 
-.font-headline {
-  font-family: 'Bebas Neue', sans-serif;
+.font-accent{
+  font-family: "Playfair Display", serif;
 }
+
+.text-sage{ color: var(--sage); }
+.text-pink{ color: var(--pink); }
 
 @keyframes glow {
   0% { box-shadow: 0 0 0px #ec4899; }

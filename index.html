@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HER BOOTYCAMP | LesLiveFit</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body class="bg-black text-white overflow-x-hidden">
+
+  <!-- PRELOADER -->
+  <div id="preloader" class="fixed inset-0 z-50 flex items-center justify-center bg-black">
+    <span class="text-pink-500 text-3xl animate-pulse">Loading HER…</span>
+  </div>
+
+  <!-- HERO -->
+  <section class="min-h-screen flex flex-col items-center justify-center relative">
+    <h1 class="font-headline text-7xl text-pink-500 mb-6 animate-fade-in">
+      HER BOOTYCAMP
+    </h1>
+
+    <button
+      id="ctaMain"
+      class="px-8 py-4 bg-pink-500 rounded-full text-black font-bold hover:scale-105 transition-all animate-glow">
+      Join Now
+    </button>
+  </section>
+
+  <!-- CHAT BUTTON -->
+  <button
+    id="chatToggle"
+    class="fixed bottom-6 right-6 bg-pink-500 text-black p-4 rounded-full shadow-xl hover:scale-110 transition">
+    💬
+  </button>
+
+  <!-- CHAT MODAL -->
+  <div id="chatBox" class="hidden fixed bottom-24 right-6 w-80 bg-zinc-900 rounded-xl overflow-hidden shadow-2xl">
+    <div class="p-4 border-b border-zinc-700 font-bold">HER Assistant</div>
+    <div id="chatMessages" class="p-4 h-64 overflow-y-auto text-sm"></div>
+    <div class="p-3 border-t border-zinc-700 flex gap-2">
+      <input id="chatInput" class="flex-1 bg-black text-white p-2 rounded" placeholder="Type..." />
+      <button id="sendChat" class="bg-pink-500 text-black px-3 rounded">→</button>
+    </div>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>

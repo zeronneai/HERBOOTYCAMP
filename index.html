@@ -21,59 +21,43 @@
   </div>
 
   <!-- HERO -->
-  <section class="min-h-screen flex flex-col items-center justify-center text-center px-6">
-    <h1 class="font-headline text-7xl md:text-8xl text-pink-500 mb-6 reveal">
-      HER BOOTYCAMP
-    </h1>
-    <p class="max-w-xl text-zinc-300 mb-10 reveal">
-      Strength. Confidence. Transformation.  
-      A premium training experience designed for women.
+  <section id="hero" class="min-h-screen flex flex-col justify-center items-center text-center px-6">
+  <h1 class="font-headline text-7xl text-pink-500 reveal">HER BOOTYCAMP</h1>
+  <p class="text-zinc-300 mt-6 max-w-xl reveal">
+    A strength-focused training experience designed for women.
+  </p>
+  <button class="openForm mt-10 px-10 py-4 bg-pink-500 text-black rounded-full font-bold animate-glow reveal">
+    Apply Now
+  </button>
+</section>
+
+<section id="about" class="min-h-screen flex items-center justify-center bg-zinc-900 px-6">
+  <div class="max-w-3xl text-center">
+    <h2 class="font-headline text-6xl text-pink-500 reveal">ABOUT HER</h2>
+    <p class="text-zinc-300 mt-6 reveal">
+      Placeholder text — this will be replaced with your final copy.
     </p>
-    <button class="px-10 py-4 bg-pink-500 text-black font-bold rounded-full animate-glow reveal">
-      Join the Movement
-    </button>
-  </section>
+  </div>
+</section>
 
-  <!-- ABOUT -->
-  <section class="min-h-screen flex items-center justify-center bg-zinc-900 px-6">
-    <div class="max-w-3xl text-center">
-      <h2 class="font-headline text-6xl text-pink-500 mb-6 reveal">
-        WHAT IS HER?
-      </h2>
-      <p class="text-zinc-300 reveal">
-        HER Bootycamp is a structured fitness program created to help women build strength,
-        shape confidence, and feel powerful in their own bodies.
-      </p>
-    </div>
-  </section>
+<section id="program" class="min-h-screen flex items-center justify-center px-6">
+  <h2 class="font-headline text-6xl text-pink-500 reveal">THE PROGRAM</h2>
+</section>
 
-  <!-- BENEFITS -->
-  <section class="min-h-screen flex items-center justify-center px-6">
-    <div class="max-w-4xl grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
-      <div class="reveal">
-        <h3 class="text-xl font-bold text-pink-500 mb-2">Strength</h3>
-        <p class="text-zinc-400">Progressive workouts designed to sculpt and empower.</p>
-      </div>
-      <div class="reveal">
-        <h3 class="text-xl font-bold text-pink-500 mb-2">Discipline</h3>
-        <p class="text-zinc-400">A system that builds consistency and confidence.</p>
-      </div>
-      <div class="reveal">
-        <h3 class="text-xl font-bold text-pink-500 mb-2">Community</h3>
-        <p class="text-zinc-400">Train with women who support and push you forward.</p>
-      </div>
-    </div>
-  </section>
+<section id="benefits" class="min-h-screen flex items-center justify-center bg-zinc-900 px-6">
+  <h2 class="font-headline text-6xl text-pink-500 reveal">BENEFITS</h2>
+</section>
 
-  <!-- CTA -->
-  <section class="min-h-screen flex flex-col items-center justify-center bg-zinc-900 text-center px-6">
-    <h2 class="font-headline text-6xl text-pink-500 mb-6 reveal">
-      READY TO START?
-    </h2>
-    <button class="px-10 py-4 bg-pink-500 text-black font-bold rounded-full animate-glow reveal">
-      Apply Now
-    </button>
-  </section>
+<section id="coach" class="min-h-screen flex items-center justify-center px-6">
+  <h2 class="font-headline text-6xl text-pink-500 reveal">YOUR COACH</h2>
+</section>
+
+<section id="cta" class="min-h-screen flex flex-col items-center justify-center bg-zinc-900 text-center px-6">
+  <h2 class="font-headline text-6xl text-pink-500 reveal">READY TO START?</h2>
+  <button class="openForm mt-8 px-10 py-4 bg-pink-500 text-black rounded-full font-bold animate-glow reveal">
+    Join HER
+  </button>
+</section>
 
   <!-- CHAT BUTTON -->
   <button
@@ -91,6 +75,25 @@
       <button id="sendChat" class="bg-pink-500 text-black px-3 rounded">→</button>
     </div>
   </div>
+<div id="formModal" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-black/80">
+  <div class="bg-zinc-900 p-8 rounded-2xl w-full max-w-md relative animate-fade-in">
+    
+    <button id="closeForm" class="absolute top-4 right-4 text-zinc-400 hover:text-white">✕</button>
+
+    <h3 class="font-headline text-4xl text-pink-500 mb-6 text-center">
+      Join HER Bootycamp
+    </h3>
+
+    <form class="space-y-4">
+      <input type="text" placeholder="Name" class="w-full p-3 rounded bg-black text-white border border-zinc-700" />
+      <input type="email" placeholder="Email" class="w-full p-3 rounded bg-black text-white border border-zinc-700" />
+      <input type="tel" placeholder="Phone" class="w-full p-3 rounded bg-black text-white border border-zinc-700" />
+      <button type="submit" class="w-full py-3 bg-pink-500 text-black font-bold rounded-full">
+        Apply Now
+      </button>
+    </form>
+  </div>
+</div>
 
   <script src="./app.js"></script>
 </body>

@@ -51,3 +51,26 @@ const observer = new IntersectionObserver(
 );
 
 reveals.forEach(el => observer.observe(el));
+// FORM MODAL LOGIC
+document.addEventListener("DOMContentLoaded", () => {
+  const formModal = document.getElementById("formModal");
+  const openFormButtons = document.querySelectorAll(".openForm");
+  const closeForm = document.getElementById("closeForm");
+
+  if (!formModal) {
+    console.warn("formModal no encontrado");
+    return;
+  }
+
+  openFormButtons.forEach(button => {
+    button.addEventListener("click", () => {
+      formModal.classList.remove("hidden");
+    });
+  });
+
+  if (closeForm) {
+    closeForm.addEventListener("click", () => {
+      formModal.classList.add("hidden");
+    });
+  }
+});

@@ -21,22 +21,35 @@
   </div>
 
   <!-- HERO -->
-  <section id="hero" class="min-h-screen flex flex-col justify-center items-center text-center px-6">
-  <h1 class="font-headline text-7xl text-sage reveal">HER BOOTYCAMP</h1>
-  <p class="text-zinc-300 mt-6 max-w-xl reveal">
-    A strength-focused training experience designed for women.
-  </p>
-  <button class="openForm mt-10 px-10 py-4 bg-sage text-black rounded-full font-bold animate-glow reveal">
-    Apply Now
-  </button>
-</section>
+  <section id="hero" class="hero relative min-h-screen flex items-center justify-center text-center px-6 overflow-hidden">
 
-<section id="about" class="min-h-screen flex items-center justify-center bg-section-panel px-6">
-  <div class="max-w-3xl text-center">
-    <h2 class="font-headline text-6xl text-sage reveal">ABOUT HER</h2>
-    <p class="text-section-main mt-6 reveal">
-      Placeholder text — this will be replaced with your final copy.
+  <!-- Animated collage background -->
+  <div class="hero-collage-bg" aria-hidden="true"></div>
+
+  <!-- Dark overlay for readability -->
+  <div class="absolute inset-0 bg-black/55" aria-hidden="true"></div>
+
+  <!-- Sage + Pink premium tint -->
+  <div class="absolute inset-0 hero-tint" aria-hidden="true"></div>
+
+  <!-- Content -->
+  <div class="relative z-10 max-w-6xl mx-auto">
+    
+    <h1 class="reveal font-headline text-6xl sm:text-7xl md:text-8xl lg:text-9xl leading-none tracking-wide">
+      <span class="text-white">IGNITE</span>
+      <span class="hero-accent"> YOUR POWER</span>
+    </h1>
+
+    <p class="reveal mt-6 text-xl sm:text-2xl md:text-3xl font-accent italic text-white/90">
+      Unleash the <span class="hero-her font-semibold not-italic">HER</span> within.
     </p>
+
+    <div class="reveal mt-10 flex justify-center">
+      <button class="openForm hero-cta px-10 py-4 rounded-full font-bold tracking-widest">
+        START MY TRANSFORMATION
+      </button>
+    </div>
+
   </div>
 </section>
 
@@ -96,5 +109,14 @@
 </div>
 
   <script src="./app.js"></script>
+  <!-- Floating Buttons (always visible) -->
+<button id="chatToggle" class="floating-btn floating-left" aria-label="Open chat">
+  💬
+</button>
+
+<button class="floating-btn floating-right openForm" aria-label="Join now">
+  JOIN NOW
+</button>
+
 </body>
 </html>
